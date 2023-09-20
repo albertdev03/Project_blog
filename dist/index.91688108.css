@@ -12,10 +12,10 @@ html {
 
 #inicio {
   background-color: #0000;
-  background-image: linear-gradient(#0e1a02b3, #000000b3), url("#");
+  background-image: linear-gradient(#0e1a02b3, #000000b3), url("background-mountain.a8b719df.jpeg");
   background-position: center;
   background-repeat: repeat, repeat;
-  background-size: contain;
+  background-size: cover;
   background-attachment: scroll, scroll;
   background-origin: padding-box, padding-box;
   background-clip: border-box, border-box;
@@ -137,7 +137,7 @@ html {
 
 #sobremi .contenedor-foto {
   max-width: 400px;
-  margin-right: 8px;
+  margin-right: 3rem;
 }
 
 #sobremi .contenedor-foto img {
@@ -186,6 +186,10 @@ html {
   line-height: 25px;
 }
 
+#sobremi .sobremi p span {
+  color: #ff5080;
+}
+
 #sobremi .sobremi a {
   color: #000;
   border: 1px solid #000;
@@ -206,7 +210,7 @@ html {
   color: #fff;
   text-align: center;
   background-color: #0000;
-  background-image: linear-gradient(#0e1a02b3, #000000b3), url("#");
+  background-image: linear-gradient(#0e1a02b3, #000000b3), url("background-mac.8210d6f2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -275,7 +279,7 @@ html {
   }
 
   100% {
-    width: 95%;
+    width: 80%;
   }
 }
 
@@ -285,7 +289,7 @@ html {
   }
 
   100% {
-    width: 90%;
+    width: 50%;
   }
 }
 
@@ -295,7 +299,7 @@ html {
   }
 
   100% {
-    width: 90%;
+    width: 60%;
   }
 }
 
@@ -305,7 +309,7 @@ html {
   }
 
   100% {
-    width: 85%;
+    width: 50%;
   }
 }
 
@@ -319,6 +323,7 @@ html {
   text-align: center;
   text-transform: uppercase;
   color: #111135;
+  margin-bottom: 3rem;
   font-size: 22px;
   -webkit-text-decoration: underline #d3d3d3;
   text-decoration: underline #d3d3d3;
@@ -326,15 +331,17 @@ html {
 }
 
 #proyectos .fila {
-  justify-content: space-between;
-  margin: 30px 0;
-  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 50px;
+  height: 100vh;
+  display: grid;
 }
 
 #proyectos .fila .proyecto {
   border: 1px solid #000;
   max-width: 450px;
-  margin: 0 10px;
+  margin: 0 1px;
   position: relative;
   overflow: hidden;
 }
@@ -342,8 +349,9 @@ html {
 #proyectos .fila .proyecto img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: auto;
   transition: all .5s;
+  display: block;
 }
 
 #proyectos .fila .proyecto .info {
@@ -372,7 +380,7 @@ html {
 
 .footer a {
   color: #fff;
-  margin: 5px;
+  margin: 10px;
   font-size: 26px;
   text-decoration: none;
   display: inline-block;
